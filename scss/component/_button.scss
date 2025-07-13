@@ -1,0 +1,53 @@
+@use "../global" as g;
+
+/*!
+component > button
+------------------------------
+*/
+.c-button {
+  padding: 14rem 24rem;
+  border-radius: 100vh;
+  min-width: 44rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  width: fit-content;
+
+  &--center {
+    margin: 0 auto;
+  }
+}
+
+.c-button-icon {
+  display: inline-block;
+  position: relative;
+  width: 7rem;
+  height: 12rem;
+  content: "";
+  background-image: url(../img/top/arrow-icon-black.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.c-button-icon-wrap {
+  width: 11.5rem;
+  height: 20rem;
+  position: relative;
+}
+
+.c-button-icon--white {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 9rem;
+  height: 17.5rem;
+  content: "";
+  background-image: url(../img/top/arrow-icon-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+

@@ -1,0 +1,196 @@
+@use "../../global" as g;
+
+/*!
+page > top > greeting
+------------------------------
+*/
+
+.top-greeting-section {
+  width: 100%;
+  background-color: var(--color-bg-base);
+  background-image: url(../img/top/greeting-bgtext.png);
+  background-repeat: no-repeat;
+  background-size: 756rem 177rem;
+  background-position: top 667rem left -119rem;
+  padding-top: 48rem;
+  padding-bottom: 120rem;
+
+  position: relative;
+  overflow: hidden;
+
+  @include g.mq() {
+    background-size: 940rem 287rem;
+    background-position: top 316rem right;
+    padding-top: 96rem;
+    padding-bottom: 0;
+    height: 982rem;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 200rem;
+    height: 200rem;
+    position: absolute;
+    background-image: url(../img/top/greeting-image-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 65rem;
+    right: -68rem;
+
+    @include g.mq() {
+      width: 300rem;
+      height: 300rem;
+      bottom: 106rem;
+      right: 84rem;
+    }
+  }
+}
+
+.top-greeting-container {
+  @include g.mq() {
+    display: flex;
+    gap: 87rem;
+  }
+}
+
+.top-greeting-image {
+  width: 282rem;
+  height: 373rem;
+  position: relative;
+
+  @include g.mq() {
+    width: 533rem;
+    height: 705rem;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 264rem;
+    height: 352rem;
+    background-image: url(../img/top/greeting-image-1.png);
+    background-size: cover;
+    position: absolute;
+    z-index: var(--z-index-default);
+
+    @include g.mq() {
+      width: 500rem;
+      height: 667rem;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 264rem;
+    height: 111rem;
+    background-image: url(../img/top/greeting-image-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @include g.mq() {
+      width: 500rem;
+      height: 211rem;
+    }
+  }
+}
+
+.top-greeting-text-container {
+  padding-left: 20rem;
+  position: relative;
+  z-index: var(--z-index-greeting-text);
+  width: 360rem;
+
+  @include g.mq() {
+    width: 460rem;
+    padding-left: 0;
+    margin-top: 76rem;
+  }
+}
+
+.top-greeting-title-wrap {
+  margin-top: 48rem;
+  margin-bottom: 32rem;
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+
+  @include g.mq() {
+    margin-top: 0;
+    margin-bottom: 56rem;
+  }
+}
+
+.top-greeting-title {
+  line-height: 1.5;
+}
+
+.top-greeting-catch {
+  font-family: var(--font-family-base);
+  color: var(--color-font-base);
+  font-size: 32rem;
+  font-weight: bold;
+  margin-bottom: 32rem;
+
+  span {
+    display: block;
+
+    @include g.mq() {
+      display: inline-block;
+      font-size: 40rem;
+    }
+  }
+}
+
+.top-greeting-text {
+  font-family: var(--font-family-base);
+  color: var(--color-font-base);
+  font-size: 16rem;
+  line-height: 2.2;
+  letter-spacing: 0.05em;
+  margin-bottom: 32rem;
+
+  :last-child {
+    margin-top: 24rem;
+  }
+
+  @include g.mq() {
+    margin-bottom: 56rem;
+  }
+
+  span {
+    display: block;
+  }
+
+  span > span {
+    display: inline;
+
+    @include g.mq() {
+      display: block;
+    }
+  }
+}
+
+.top-greeting-button {
+  border: 1px solid var(--color-font-base);
+  padding: 14rem 24rem;
+  font-size: 14rem;
+  font-weight: bold;
+
+  @include g.mq() {
+    font-size: 16rem;
+    padding: 18rem 32rem;
+  }
+}
+
+.top-greeting-button-icon {
+  margin-left: 16rem;
+
+  @include g.mq() {
+    margin-left: 32rem;
+  }
+}

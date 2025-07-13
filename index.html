@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>コーディングテンプレート</title>
+    <meta name="description" content="ページの説明" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon/webclipicon -->
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/webclip.png" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website or article" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="URL" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-area">
+      <header class="header">
+        <h1 class="header-logo">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="img/common/logo-sp.png"
+            />
+            <source media="(max-width: 768px)" srcset="img/common/logo.png" />
+            <img
+              width="600"
+              height="92"
+              src="img/common/logo.png"
+              alt="MATSUYAMA CLINIC"
+            />
+          </picture>
+        </h1>
+        <div class="header-menu-container">
+          <dialog
+            class="header-menu js-header-menu"
+            aria-label="メインメニュー"
+          >
+            <div class="header-dialog-header">
+              <p class="header-logo">
+                <img
+                  width="400"
+                  height="92"
+                  src="img/common/logo-sp.png"
+                  alt="MATSUYAMA CLINIC"
+                />
+              </p>
+              <button class="header-menu-close-button js-header-close-button">
+                <span class="header-menu-close-button-icon"></span>
+                close
+              </button>
+            </div>
+            <nav class="header-menu-nav">
+              <ul class="header-menu-list">
+                <li class="header-menu-item">
+                  <a href="https://www.google.com/"
+                    ><span class="header-menu-item-en">greeting</span>ご挨拶</a
+                  >
+                </li>
+                <li class="header-menu-item">
+                  <a href="https://www.google.com/"
+                    ><span class="header-menu-item-en">feature</span
+                    >３つの特徴</a
+                  >
+                </li>
+                <li class="header-menu-item">
+                  <a href="https://www.google.com/"
+                    ><span class="header-menu-item-en">interview</span
+                    >インタビュー</a
+                  >
+                </li>
+                <li class="header-menu-item">
+                  <a href="https://www.google.com/"
+                    ><span class="header-menu-item-en">news</span>新着情報</a
+                  >
+                </li>
+                <li class="header-menu-item">
+                  <a href="https://www.google.com/"
+                    ><span class="header-menu-item-en">topic</span>トピック</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <a href="#" class="c-button header-entry-button-sp">
+              <div class="header-entry-button-sp-text">
+                <p>entry</p>
+                <p>エントリー</p>
+              </div>
+              <span class="c-button-icon-wrap"
+                ><span class="c-button-icon--white"></span
+              ></span>
+            </a>
+          </dialog>
+
+          <button class="header-menu-button js-header-button">
+            <span class="header-menu-button-icon"
+              ><span></span><span></span><span></span
+            ></span>
+            menu
+          </button>
+
+          <a href="" class="header-button">
+            <div class="header-button-inner">
+              <div class="header-button-textarea">
+                <span>entry</span><span>エントリー</span>
+              </div>
+              <span class="header-button-icon"></span></div
+          ></a>
+        </div>
+      </header>
+
+      <!-- kv -->
+      <section class="top-kv-section">
+        <div class="top-kv-image"></div>
+
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="img/top/catch-section-sp.png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="img/top/catch-section.png"
+          />
+          <img
+            src="img/top/catch-section.png"
+            width="1329"
+            height="538"
+            alt="Face any challenge you face"
+            class="top-kv-catch-image"
+          />
+        </picture>
+      </section>
+    </div>
+
+    <!-- news  -->
+    <section class="top-news-section">
+      <div class="top-news-container">
+        <hgroup class="top-news-title-wrap">
+          <p class="c-title top-news-title">news</p>
+          <h2 class="c-title-jp">新着情報</h2>
+        </hgroup>
+        <div class="top-news-wrap">
+          <div class="top-news-posts">
+            <article class="top-news-post">
+              <a href="#">
+                <img
+                  width="600"
+                  height="400"
+                  src="img/top/newsitem-image-1.png"
+                  alt=""
+                />
+                <div class="top-news-post-about">
+                  <p class="top-news-post-label">採用情報</p>
+                  <time datetime="2022-11-05" class="top-news-post-date"
+                    >2022.11.05</time
+                  >
+                </div>
+                <h3 class="top-news-post-title">採用採用説明会開催について</h3>
+              </a>
+            </article>
+            <article class="top-news-post">
+              <a href="#">
+                <img
+                  width="600"
+                  height="400"
+                  src="img/top/newsitem-image-2.png"
+                  alt=""
+                />
+                <div class="top-news-post-about">
+                  <p class="top-news-post-label">採用情報</p>
+                  <time datetime="2022-11-05" class="top-news-post-date"
+                    >2022.11.05</time
+                  >
+                </div>
+                <h3 class="top-news-post-title">
+                  松山クリニック開催 無料の新卒セミナーのご案内
+                </h3>
+              </a>
+            </article>
+            <article class="top-news-post">
+              <a href="#">
+                <img
+                  width="600"
+                  height="400"
+                  src="img/top/newsitem-image-3.png"
+                  alt=""
+                />
+                <div class="top-news-post-about">
+                  <p class="top-news-post-label">採用情報</p>
+                  <time datetime="2022-11-05" class="top-news-post-date"
+                    >2022.11.05</time
+                  >
+                </div>
+                <h3 class="top-news-post-title">
+                  2023卒の新卒採用を終了致しました。
+                </h3>
+              </a>
+            </article>
+          </div>
+          <div class="top-news-button-container">
+            <a href="" class="c-button top-news-button"
+              ><div class="top-news-button-inner">
+                more<span
+                  class="c-button-icon top-news-button-icon"
+                ></span></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- greeting -->
+    <section class="top-greeting-section">
+      <div class="top-greeting-container">
+        <div class="top-greeting-image"></div>
+        <div class="top-greeting-text-container">
+          <hgroup class="top-greeting-title-wrap">
+            <p class="c-title top-greeting-title">greeting</p>
+            <h2 class="c-title-jp">ご挨拶</h2>
+          </hgroup>
+          <div class="top-greeting-text-wrap">
+            <p class="top-greeting-catch">
+              <span>命を守る、</span>
+              <span>未来を創る。</span>
+              <span>共に歩む医療の道。</span>
+            </p>
+            <p class="top-greeting-text">
+              <span>
+                <span>私たちは、患者さまの笑顔のために</span
+                >日々研鑽を重ねています。
+              </span>
+              <span>医療の最前線で、あなたの力を活かしませんか？</span>
+              <span>共に成長し、地域医療に貢献できる仲間を求めています。</span>
+            </p>
+          </div>
+          <a href="#" class="c-button top-greeting-button">
+            私たちからのご挨拶
+            <span class="c-button-icon top-greeting-button-icon"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature -->
+    <section class="top-feature-section">
+      <div class="l-container top-feature-container">
+        <div class="top-feature-text-container">
+          <hgroup class="top-feature-title-wrap">
+            <p class="c-title top-feature-title">feature</p>
+            <h2 class="c-title-jp top-feature-title-jp">３つの特徴</h2>
+          </hgroup>
+          <div class="top-feature-text-wrap">
+            <p>
+              最新の設備と公平な評価制度、そしてフラットな組織文化が、あなたの可能性を最大限に引き出します。共に学び、高め合える環境で、医療のプロフェッショナルとして輝きましょう。
+            </p>
+          </div>
+        </div>
+        <ul class="top-feature-list">
+          <li class="top-feature-item">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="img/top/feature-item-image-1sp.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/top/feature-item-image-1.png"
+              />
+              <img
+                src="img/top/feature-item-image-1.png"
+                width="704"
+                height="880"
+                alt=""
+              />
+            </picture>
+            <div class="top-feature-item-text">
+              <span>01</span>
+              <h3>セミナールームを設置</h3>
+              <span>Set up seminer room</span>
+            </div>
+          </li>
+          <li class="top-feature-item">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="img/top/feature-item-image-2sp.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/top/feature-item-image-2.png"
+              />
+              <img
+                src="img/top/feature-item-image-2.png"
+                width="704"
+                height="880"
+                alt=""
+              />
+            </picture>
+            <div class="top-feature-item-text">
+              <span>02</span>
+              <h3>フラットな環境</h3>
+              <span>Inclusive Workplace</span>
+            </div>
+          </li>
+          <li class="top-feature-item">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="img/top/feature-item-image-3sp.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/top/feature-item-image-3.png"
+              />
+              <img
+                src="img/top/feature-item-image-3.png"
+                width="704"
+                height="880"
+                alt=""
+              />
+            </picture>
+            <div class="top-feature-item-text">
+              <span>03</span>
+              <h3>制度の整備と公平な評価</h3>
+              <span>Fair Assessment</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- interview -->
+    <section class="top-interview-section">
+      <!-- interview bg -->
+      <div class="top-interview-container">
+        <div class="top-interview-block"></div>
+        <hgroup class="top-interview-title-wrap">
+          <p class="c-title top-interview-title">interview</p>
+          <h2 class="c-title-jp top-interview-title-jp">インタビュー</h2>
+        </hgroup>
+        <div class="top-interview-post-wrap">
+          <div class="top-interview-post">
+            <article class="top-interview-post-thumbnail">
+              <img
+                src="img/top/interview-item-image-1.png"
+                width="1048"
+                height="780"
+                alt=""
+              />
+              <h3 class="top-interview-post-text">
+                <span>チームの絆が</span>
+                <span>患者さまを支える力に。</span>
+              </h3>
+            </article>
+            <div class="top-interview-button-wrap">
+              <a href="#" class="c-button c-button--center top-interview-button"
+                >看護師のインタビュー一覧<span
+                  class="c-button-icon top-interview-button-icon"
+                ></span
+              ></a>
+            </div>
+          </div>
+          <div class="top-interview-post">
+            <article class="top-interview-post-thumbnail">
+              <img
+                src="img/top/interview-item-image-2.png"
+                width="1048"
+                height="780"
+                alt=""
+              />
+              <h3 class="top-interview-post-text">
+                <span>仕事もプライベートも</span>
+                <span>イキイキと。</span>
+              </h3>
+            </article>
+            <div class="top-interview-button-wrap">
+              <a
+                href="#"
+                class="c-button c-button--center top-interview-button top-interview-button--green"
+                >事務員のインタビュー一覧<span
+                  class="c-button-icon top-interview-button-icon"
+                ></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- entry -->
+    <section class="top-entry-section">
+      <div class="l-container top-entry-container">
+        <div class="top-entry-image">
+          <!-- <img
+            src="img/top/entry-image-1.png"
+            width="494"
+            height="944"
+            alt=""
+          />
+          <img
+            src="img/top/entry-image-2.png"
+            width="494"
+            height="944"
+            alt=""
+          />
+          <img
+            src="img/top/entry-image-3.png"
+            width="494"
+            height="944"
+            alt=""
+          /> -->
+          <img
+            src="img/top/entry-content-image.png"
+            alt=""
+            width="1480"
+            height="944"
+          />
+        </div>
+        <div class="top-entry-text-container">
+          <hgroup class="top-entry-title-wrap">
+            <h2 class="c-title top-entry-title">entry</h2>
+            <p class="c-title-jp top-entry-title-jp">エントリー</p>
+          </hgroup>
+          <p class="top-entry-text">
+            <span>あなたの一歩が、多くの笑顔につながります。</span>
+            <span>いま、その第一歩を踏み出す時です。</span>
+            <span>ぜひ、あなたの想いをお聞かせください。</span>
+          </p>
+          <a href="#" class="c-button top-entry-button">
+            <div class="top-entry-button-text">
+              <p>entry</p>
+              <p>エントリー</p>
+            </div>
+            <span class="c-button-icon-wrap">
+              <span class="c-button-icon--white"></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="l-container">
+        <div class="footer-inner">
+          <p class="footer-logo">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="img/common/footer-logo-sp.png"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="img/common/footer-logo.png"
+              />
+              <img
+                width="600"
+                height="92"
+                src="img/common/footer-logo.png"
+                alt=""
+              />
+            </picture>
+          </p>
+          <ul class="footer-nav">
+            <li class="footer-item">ご挨拶</li>
+            <li class="footer-item">３つの特徴</li>
+            <li class="footer-item">インタビュー</li>
+            <li class="footer-item">新着情報</li>
+            <li class="footer-item">トピック</li>
+          </ul>
+          <div class="footer-button-container">
+            <a href="" class="c-button c-button--center footer-button"
+              >コーポレートサイト<span
+                class="c-button-icon footer-button-icon"
+              ></span
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-block">
+          <a href="">サイトマップ</a>
+          <a href="">プライバシーポリシー</a>
+        </div>
+
+        <small class="footer-copyright">Copyright©All Right Reserved.</small>
+      </div>
+    </footer>
+  </body>
+</html>

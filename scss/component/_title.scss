@@ -1,0 +1,27 @@
+@use "../global" as g;
+
+/*!
+component > title
+------------------------------
+*/
+.c-title {
+  font-family: var(--font-family-english);
+  font-size: 32rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-font-base);
+
+  @include g.mq(){
+  font-size: 42rem;
+  line-height: 1.7;
+  }
+}
+
+.c-title-jp {
+  font-family: var(--font-family-base);
+  font-size: 14rem;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  color: var(--color-font-light);
+}

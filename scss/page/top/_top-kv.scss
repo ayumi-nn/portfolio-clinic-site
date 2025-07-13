@@ -1,0 +1,42 @@
+@use "../../global" as g;
+
+/*!
+page > top > top-kv
+------------------------------
+*/
+
+.top-kv-section {
+  width: 100%;
+  height: 600rem;
+  position: relative;
+
+  @include g.mq() {
+    height: 800rem;
+  }
+}
+
+.top-kv-image {
+  height: 600rem;
+  background-image: url(../img/top/top-kv-image-sp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include g.mq() {
+    background-image: url(../img/top/top-kv-image.png);
+    height: 800rem;
+  }
+}
+
+.top-kv-catch-image {
+  position: absolute;
+  width: 356rem;
+  top: 243rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include g.mq() {
+    width: 650rem;
+    top: 234rem;
+  }
+}
