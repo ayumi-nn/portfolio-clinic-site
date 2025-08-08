@@ -5,13 +5,9 @@ HelloMentorのコーディング課題として作成した、架空のクリニ
 レスポンシブデザインに対応し、JavaScriptを使用してハンバーガーメニューを実装しています。  
 またCSSはSCSSで記述しています。
 
----
-
 ##  公開URL
 
 👉 [https://portfolio-clinic-site.vercel.app/](https://portfolio-clinic-site.vercel.app/)
-
----
 
 ## 仕様技術
 ### フロントエンド
